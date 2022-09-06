@@ -9,7 +9,7 @@ function QuestionForm(props) {
     answer3: "",
     answer4: "",
     correctIndex: 0,
-  });
+  })
 
   function handleChange(event) {
     setFormData({
