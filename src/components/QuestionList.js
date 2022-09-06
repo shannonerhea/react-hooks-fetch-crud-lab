@@ -22,7 +22,7 @@ function QuestionList() {
         const updatedQuestions = questions.filter((q) => q.id !== id);
         setQuestions(updatedQuestions);
       });
-  }
+  };
 
   function handleAnswerChange(id, correctIndex) {
     fetch(`http://localhost:4000/questions/${id}`, {
@@ -57,6 +57,6 @@ function QuestionList() {
       <ul>{questionItems}</ul>
     </section>
   );
-}
+};
 
 export default QuestionList;
